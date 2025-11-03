@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background: #06162e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background: #121e36;
+  padding: 25px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 0 40px rgba(0,0,0,0.45);
+}
+
+.screen {
+  background: #0a1325;
+  height: 75px;
+  border-radius: 15px;
+  color: white;
+  font-size: 38px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  height: 55px;
+  font-size: 24px;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  background: #2a3446;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.btn:hover { opacity: 0.7; }
+
+.red { background: #e34747; }
+.blue { background: #2c6df3; }
+.green { background: #2ecc71; }
+.gray { background: #3b4657; }
+
+/* ✅ C dan 0 lebar 2 kolom */
+.span-2 {
+  grid-column: span 2;
+}
+
